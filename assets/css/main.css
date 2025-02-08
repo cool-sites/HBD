@@ -1694,7 +1694,7 @@ body {
 .love-section {
   position: relative;
   height: 70vh;
-  background: url('/Martini_HBD/assets/img/ily-giphy.gif') no-repeat center center/cover;
+  background: url('/HBD/assets/img/ily-giphy.gif') no-repeat center center/cover;
 }
 .overlay {
   position: absolute;
