@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>HBD Martini ❤️🎂</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/baby-yoda.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top galxy">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/sm.avif" alt="">
+        <h1 class="sitename">Martini 🎂❤️</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main container-fluid">
+    <!-- Hero Section -->
+    <section class="vh-100 d-flex align-items-center justify-content-center text-center text-white"
+      style="background: url('./assets/img/hbd.gif') center/cover no-repeat;">
+      <div class="container bg-dark bg-opacity-50 p-5 rounded">
+        <h1 class="display-3 fw-bold">Happy Birthday Martini!🎂❤️</h1>
+        <p class="lead">I love you and wish you many more amazing years to come : )</p>
+        <!-- Button to Open Modal -->
+        <button type="button" class="shiny-cta" data-bs-toggle="modal" data-bs-target="#birthdayModal">
+          Open Birthday Message 🎉
+        </button>
+      </div>
+    </section>
+
+    <!-- /Hero Section -->
+
+    <!-- I Love you Section -->
+    <section class="love-section d-flex align-items-center justify-content-center text-center text-white">
+      <div class="overlay"></div>
+      <div class="container position-relative">
+        <h1 class="mb-4">Reasons I Love You</h1>
+        <div class="row justify-content-end">
+          <div class="col-md-6">
+            <div class="love-card p-4">
+              <ul class="list-unstyled">
+                <li>&#10084; You always make me laugh.</li>
+                <li>&#10084; You support me no matter what.</li>
+                <li>&#10084; Your smile brightens my day.</li>
+                <li>&#10084; You are kind and caring.</li>
+                <li>&#10084; You make me feel safe and loved.</li>
+                <li>&#10084; You listen to me even when I ramble.</li>
+                <li>&#10084; You surprise me in the sweetest ways.</li>
+                <li>&#10084; You believe in me when I doubt myself.</li>
+                <li>&#10084; Your hugs feel like home (even with the distance).</li>
+                <li>&#10084; You make even ordinary moments special.</li>
+                <li>&#10084; You inspire me to be a better person.</li>
+                <li>&#10084; You love me for who I truly am.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /I Love you Section -->
+
+    <!-- Birthday cake -->
+    <section class="birthday-section">
+      <h1>Happy Birthday! 🎂 Click the candles to blow them out!</h1>
+      <div class="cake">
+        <img src="./assets/img/cake-removebg-preview.png" alt="Birthday Cake">
+        <div class="candle" onclick="blowCandle(this)">
+          <div class="flame"></div>
+        </div>
+        <div class="candle" onclick="blowCandle(this)">
+          <div class="flame"></div>
+        </div>
+        <div class="candle" onclick="blowCandle(this)">
+          <div class="flame"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /Birthday cake -->
+
+    <!-- letter section -->
+    <section class="container-fluid py-5 galxy-white h-100">
+      <div class="container">
+        <h1 class="text-center mb-4">Open When Letters 💌</h1>
+        <div class="row align-items-center">
+
+          <div class="row g-3">
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter1')">Open When You're
+                Sad</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter2')">Open When You Miss
+                Me</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter3')">Open When You Need
+                Motivation</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter4')">Open When You Need a
+                Laugh</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter5')">Open When You Can't
+                Sleep</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter6')">Open When You Feel
+                Stressed</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter7')">Open When You Need
+                Encouragement</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter8')">Open When You're
+                Feeling Lonely</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter9')">Open When You Need a
+                Surprise</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter10')">Open When You Feel
+                Overwhelmed</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter11')">Open When You Need to
+                Smile</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger w-100 py-3 shiny-cta" onclick="openLetter('letter12')">Open When You Want to
+                Remember Special Moments</button>
+            </div>
+          </div>
+
+          <div id="letter1" class="alert alert-light mt-4 d-none">Hey love, I'm always here for you. Remember, tough
+            times don't last, but you do. ❤️</div>
+          <div id="letter2" class="alert alert-light mt-4 d-none">Missing me? Just close your eyes and feel my hugs!
+            You're never alone. 💕</div>
+          <div id="letter3" class="alert alert-light mt-4 d-none">You're amazing, strong, and capable of anything. Keep
+            pushing forward! 🌟</div>
+          <div id="letter4" class="alert alert-light mt-4 d-none">Why did the scarecrow win an award? Because he was
+            outstanding in his field! 😂</div>
+          <div id="letter5" class="alert alert-light mt-4 d-none">Can't sleep? Imagine me hugging you tight and
+            whispering "te quiero tanto". Sweet dreams, love. 🌙💖</div>
+          <div id="letter6" class="alert alert-light mt-4 d-none">Take a deep breath. You are strong, and you will get
+            through this. I believe in you. 💖</div>
+          <div id="letter7" class="alert alert-light mt-4 d-none">You are capable of achieving anything you set your
+            mind to. Keep going! 🚀</div>
+          <div id="letter8" class="alert alert-light mt-4 d-none">Even if it feels like you're alone, know that I'm
+            always with you in spirit. ❤️</div>
+          <div id="letter9" class="alert alert-light mt-4 d-none">Surprise! I love you more than words can say. 🎉</div>
+          <div id="letter10" class="alert alert-light mt-4 d-none">Take things one step at a time. You got this! 💪
+          </div>
+          <div id="letter11" class="alert alert-light mt-4 d-none">Smile! You're the most wonderful person in the world
+            to me. 😊</div>
+          <div id="letter12" class="alert alert-light mt-4 d-none">Remember our special moments together? Hold them in
+            your heart forever. ❤️</div>
+
+
+        </div>
+
+      </div>
+    </section>
+    <!-- /letter section -->
+
+    <!-- bye bye section -->
+    <section class="container-fluid bye-bye d-flex align-items-center justify-content-center text-center text-white">
+      <div class="gif-overlay"></div>
+      <div class="content position-absolute">
+        <h1 class="fw-bold pt-5">All Done Yayyyyyyyy : D</h1>
+      </div>
+    </section>
+    <!-- /bye bye section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer galxy">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">I Love You ❤️</strong>
+        </p>
+      </div>
+
+
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">Ro💕</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="birthdayModal" tabindex="-1" aria-labelledby="birthdayModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Starry Background -->
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="birthdayModalLabel">✨ Happy Birthday! ✨</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Wishing you a birthday as magical as the stars above! 🌌🎂</p>
+          <p>May this year bring you endless joy, exciting adventures, and dreams that shine as bright as the galaxy.
+            You are truly out of this world, and I’m so lucky to celebrate you today! 🚀💫</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="shiny-cta py-2 px-4" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const starContainer = document.querySelector(".stars");
+
+      function createStar() {
+        const star = document.createElement("div");
+        star.classList.add("star");
+
+        // Randomize position
+        const size = Math.random() * 3 + 1; // Random size between 1px and 4px
+        const posX = Math.random() * 100; // Random horizontal position (0-100%)
+        const posY = Math.random() * 100; // Random vertical position (0-100%)
+        const animationDelay = Math.random() * 5 + "s"; // Random animation delay
+
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+        star.style.top = `${posY}%`;
+        star.style.left = `${posX}%`;
+        star.style.animationDelay = animationDelay;
+
+        starContainer.appendChild(star);
+      }
+
+      // Generate multiple stars
+      for (let i = 0; i < 50; i++) { // Increase this number for more stars
+        createStar();
+      }
+    });
+
+  </script>
+  <!-- Cake script -->
+  <script>
+    function blowCandle(candle) {
+      const flame = candle.querySelector('.flame');
+      if (flame) {
+        flame.style.display = 'none';
+      }
+      if (document.querySelectorAll('.flame:not([style="display: none;"])').length === 0) {
+        alert('Make a wish! 🎉');
+      }
+    }
+  </script>
+
+  <!-- letter script -->
+  <script>
+    function openLetter(id) {
+      document.querySelectorAll('.alert').forEach(letter => letter.classList.add('d-none'));
+      document.getElementById(id).classList.remove('d-none');
+    }
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
